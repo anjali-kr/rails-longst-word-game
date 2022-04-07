@@ -1,0 +1,11 @@
+<div style="margin: 24px;">
+  <h1>Your score</h1>
+
+  <div class="score-board">
+    <!-- <p>Time taken: <%= @result[:time] %></p> -->
+    <p>Your word: <span><%= @word.upcase %></span></p>
+    <p>Your score: <%= @result[:score] %></p>
+    <p><%= raw(@result[:message]) %></p>
+  </div>
+  <%= link_to 'Play again', new_path, id: "link-play"  %>
+</div>
